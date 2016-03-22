@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 
 @Controller
-@RequestMapping("/userController")
+@RequestMapping("/sysUserController")
 public class SysUserController {
 	@Resource
 	private SysUserService sysUserService;

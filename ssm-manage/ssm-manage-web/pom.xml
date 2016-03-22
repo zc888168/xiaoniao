@@ -1,7 +1,7 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.youmeek.manage</groupId>
@@ -12,14 +12,14 @@
     <packaging>war</packaging>
 
     <dependencies>
-        
+
         <dependency>
             <groupId>com.youmeek.manage</groupId>
             <artifactId>ssm-manage-service</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-        
-        <!-- JSP相关 -->
+
+        <!-- JSP、servlet 相关 -->
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
@@ -27,26 +27,18 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        
-        <!-- 文件上传组件 -->
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
         </dependency>
 
         <!--单元测试-->
+        <!--由于 junit 在父 pom 是 scope 是定义为 test，所以没办法有传递性，所以哪里要用到需要进行重新声明-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
-
 
     </dependencies>
 

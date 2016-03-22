@@ -19,13 +19,7 @@
     <!-- 添加依赖 -->
     <dependencies>
 
-        <!--单元测试-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-
-        <!-- 日志文件管理包 -->
+        <!-- 日志文件管理包 start-->
         <!--下面这三个是配套使用：http://blog.csdn.net/woshiwxw765/article/details/7624556-->
         <dependency>
             <groupId>log4j</groupId>
@@ -41,7 +35,7 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
-
+        <!-- 日志文件管理包 end-->
 
         <!--JSON处理-->
         <dependency>
@@ -66,7 +60,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-
+        
     </dependencies>
 
 
